@@ -30,7 +30,7 @@ Hệ thống **Travel Good** được thiết kế để hỗ trợ người dù
 - **Cấu trúc:** MVC (Model - View - Controller)
 - **Servlet Container:** Apache Tomcat 7 (via Maven Plugin)
 - **Database Access:** JDBC (Java Database Connectivity)
-- **Database:** MySQL 8.x/9.x
+- **Database:** MySQL 9.0.2
 - **Thư viện:** - `mysql-connector-j`: Kết nối cơ sở dữ liệu MySQL.
   - `JSTL`: Xử lý logic hiển thị dữ liệu trên trang JSP.
 
@@ -50,6 +50,18 @@ Hệ thống **Travel Good** được thiết kế để hỗ trợ người dù
 
 ---
 
+## Giao diện ứng dụng (Screenshots)
+
+|                                           Trip Management Page                                           |
+| :------------------------------------------------------------------------------------------------------: |
+| ![TripManagement](https://github.com/methaihuy1505/task-travel-good/blob/main/images/TripManagement.png) |
+
+|                                              Destination Management Page                                               |
+| :--------------------------------------------------------------------------------------------------------------------: |
+| ![DestinationManagement](https://github.com/methaihuy1505/task-travel-good/blob/main/images/DestinationManagement.png) |
+
+---
+
 ## Hướng dẫn cài đặt và chạy dự án (Local)
 
 ### 1. Yêu cầu hệ thống
@@ -66,6 +78,8 @@ Hệ thống **Travel Good** được thiết kế để hỗ trợ người dù
     ```sql
     CREATE DATABASE travel_good_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
     ```
+
+    Sau đó chạy query trong thư mục db
 
 2.  **Cấu hình kết nối:**
     Mở file `src/main/java/util/DBConnection.java` và cập nhật thông tin tài khoản MySQL của bạn:
